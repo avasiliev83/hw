@@ -1,0 +1,30 @@
+{%  layout "layout.liquid" %}
+{%  block content %}
+<div class="row">
+    <div class="news">
+        {% for n in news %}
+            <p class="news-chapter mb-0 mt-3">НАУКА И ТЕХНИКА<span class="news-date">{{ n.ptime }}</span></p>
+            <p class="news-title mb-0 mt-1"><a href="{{ n.url }}">{{ n.title }}</a></p>
+            <p class="news-description mb-0 mt-1">{{ n.description }}</p>
+        {% else %}
+            <p class="news-description mt-3">Не дождались новостей</p>
+        {% endfor %}
+    </div>
+</div>
+<div class="row mb-0">
+    {% for p in phrases limit:1 %}
+        <p class="together">Вместе с <b>"{{ query }}"</b> часто ищут</p>
+    {% else %}
+        <p class="news-description">Не дождались фраз</p>
+    {% endfor %}
+</div>
+<div class="row">
+    <div class="phrases">
+        <table>
+            {% tablerow p in phrases cols:2 %}
+                <p class="phrase mb-0 mt-1"><a href="/?query={{ p.notags }}">{{ p.tagged }}</a></p>
+            {% endtablerow %}
+        </table>
+    </div>
+</div>
+{% endblock %}

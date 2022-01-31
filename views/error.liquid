@@ -1,0 +1,7 @@
+{%  layout "layout.liquid" %}
+{%  block content %}
+
+<h1>{{ message }}</h1>
+<h2>{{ error.status }}</h2>
+<pre id="{{ error.stack }}"></pre>
+{% endblock %}

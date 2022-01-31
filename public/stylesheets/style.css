@@ -1,0 +1,61 @@
+body {
+  padding: 0 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.content {
+  width: 960px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border: none;
+}
+
+.row {
+  margin: 0 0 40px 0;
+}
+
+.news-chapter {
+  color: #0000ee;
+  font-weight: 500;
+}
+
+.news-title a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.phrase a {
+  color: #0000ee;
+}
+
+.news-date {
+  color: #888;
+  margin: 0 0 0 60px;
+  font-size: 12px;
+}
+
+.together {
+  font-size: 20px;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mt-1 {
+  margin-top: 12px;
+}
+
+.mt-3 {
+  margin-top: 36px;
+}
